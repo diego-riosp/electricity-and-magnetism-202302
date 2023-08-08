@@ -1,0 +1,65 @@
+\documentclass[professionalfont]{beamer}
+\usepackage[utf8]{inputenc}
+\usetheme{Warsaw}
+\usepackage{newtxtext}
+\usepackage{amsmath,amssymb}
+\usepackage{graphics,subfigure}
+\usepackage{color}
+\usepackage{graphicx}
+\usepackage{slashed}
+\DeclareGraphicsRule{*}{mps}{*}{}
+\DeclareMathSymbol{\ii}{\mathalpha}{letters}{"10}
+\DeclareMathSymbol{\jj}{\mathalpha}{letters}{"11}
+
+\newcommand{\ihat}{\mathbf {\hat{\ii}}}
+\newcommand{\jhat}{\mathbf {\hat{\jj}}}
+\newcommand{\vect}{\mathbf}
+
+\input{info}
+
+\usefoottemplate{\vbox{
+\tinycolouredline{black!100}
+{\scriptsize \color{white}\stitle\hspace{0.5cm}|\hspace{0.5cm}\email\hspace{0.5cm}\hfill\insertframenumber\,/\,\inserttotalframenumber}
+}}
+
+\useheadtemplate{}
+\setbeamercolor{frametitle}{bg=black!100}
+\setbeamercolor*{structure}{bg=black!100}
+
+\DeclareMathOperator{\ZF}{\mathbb{Z}_5}
+\DeclareMathOperator{\hc}{\text{h.c.}}
+\DeclareMathOperator{\hs}{\hspace{0.05cm}}
+
+\title{\ltitle}
+\date{}
+
+\def\journal{journal.tex}
+\def\exposition{exposition.tex}
+
+
+\usenavigationsymbolstemplate
+
+%%% Alertblock blue
+% \setbeamercolor{block title alerted}{fg=white,bg=blue!70}
+%        \setbeamercolor{block body alerted}{fg=black!90,bg=blue!15}
+
+\begin{document}
+    
+    \begin{frame}
+    
+        \vspace{-2em}
+        
+        \titlepage
+        \input{\type}
+        
+    \end{frame}
+    
+    \input{slides.tex}
+    
+    \setbeamertemplate{frametitle continuation}{
+    \setcounter{cont}{\beamer@endpageofframe}
+    \addtocounter{cont}{1}
+    \addtocounter{cont}{-\beamer@startpageofframe}
+    }
+    
+\end{document}
