@@ -6,7 +6,7 @@
 
 <hr>
 
-  <a href="https://github.com/diego-riosp/electricity-and-magnetism/releases/latest">![example1](https://img.shields.io/badge/slides-latest_version-brightgreen.svg?style=for-the-badge&logo=github)</a>
+  <a href="https://github.com/diego-riosp/electricity-and-magnetism-202302/releases/latest">![example1](https://img.shields.io/badge/slides-latest_version-brightgreen.svg?style=for-the-badge&logo=github)</a>
 
   <a href="https://udeaeduco-my.sharepoint.com/personal/boris_rodriguez_udea_edu_co/_layouts/15/onedrive.aspx?ga=1&id=%2Fpersonal%2Fboris%5Frodriguez%5Fudea%5Fedu%5Fco%2FDocuments%2F%28E%26M%29%20F%C3%ADsica%5FB%C3%A1sica%5FII%2D2023%2D1%2FBibliografia">![example1](https://img.shields.io/badge/bibliography-folder-blue.svg?style=for-the-badge&logo=github)</a>
 
