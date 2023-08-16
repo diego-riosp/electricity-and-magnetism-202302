@@ -214,6 +214,48 @@ Si se duplica la carga de cada bola, la distancia entre las bolas en el tubo de 
     
 \end{frame}
 
+\begin{frame}{}
+
+    \textbf{Pasos para solucionar un problema con diferenciales}
+
+    \begin{enumerate}
+        \item Analice si el sistema verifica simetrías que permiten despreciar o cancelar fuerzas en una o varias direcciones. 
+        \item Escoja un elemento diferencial (longitud, área o volumen) en función de una de las variables del sistema coordenado ($x$, $y$, $\theta$, $r$, etc):
+        \begin{equation*}
+            dq = \lambda dl,\, \sigma dA\, \text{ó}\, \rho dV,
+        \end{equation*}
+
+        donde se definen las densidades lineal, superficial y volumétrica de carga como:
+        \begin{equation*}
+            \lambda = \frac{q}{l},\, \sigma = \frac{q}{A}\, \text{y}\, \rho = \frac{q}{V}
+        \end{equation*}
+        \item Defina el vector de posición $\vec{r}$ en función de la misma variable que escogió para el elemento diferencial.
+        \item Integre sobre todo recorrido de la variable en cuestión.
+    \end{enumerate}
+    
+\end{frame}
+
+\begin{frame}{}
+    \begin{enumerate}
+        \setcounter{enumi}{4}
+        \item En caso de ser posible, considere las siguientes aproximaciones
+        \begin{equation*}
+        \begin{aligned}
+            (1+x^2)^{-1/2}&=\sum_{k=0}^\infty (-1)^k\frac{(2k-1)!!}{(2k)!!}x^k,\\
+            (1+x^2)^{-3/2}&=\sum_{k=0}^\infty (-1)^k\frac{(2k+1)!!}{(2k)!!}x^k,
+        \end{aligned}
+        \end{equation*}
+        donde se define el doble factorial como 
+        \begin{equation*}
+            \begin{aligned}
+            (2k-1)!!&=1\cdot3\cdot5\cdot\dots\cdot(2k-3)(2k-1)=\frac{(2k)!}{2^kk!},\\
+            (2k)!!&=2\cdot4\cdot6\cdot\dots\cdot(2k-2)(2k)=2^kk!.
+            \end{aligned}
+        \end{equation*}
+        En otro caso, utilice sustitución trigonométrica de ser posible.
+    \end{enumerate}
+\end{frame}
+
 \begin{frame}{Semana 3 (15/08/2023) - T2P6}
 
 Un semicírculo de radio $a$ se encuentra en los cuadrantes primero y segundo, y con el centro de curvatura en el origen. La carga positiva $+Q$ está distribuida de manera uniforme alrededor de la mitad izquierda del semicírculo, y la carga negativa $-Q$ está distribuida de manera uniforme
@@ -239,12 +281,18 @@ alrededor de la mitad derecha del semicírculo como lo muestra la figura.
             F=\frac{1}{4\pi\epsilon_0}\left(\frac{Q}{L}\right)^2\ln\left[\frac{\left(d+L\right)^2}{d(d+2L)}\right]
         \end{equation}
         
-        \item[c)] Demuestre que si $L>>d$, entonces
+        \item[c)] Demuestre que si $L<<d$, entonces
         
         \begin{equation}
             F=\frac{1}{4\pi\epsilon_0}\left(\frac{Q}{d}\right)^2.
         \end{equation}
         
     \end{itemize}
+
+\end{frame}
+
+\begin{frame}{Semana 3 (15/08/2023) - Q1}
+    
+    En cada vértice de un cuadrado hay una partícula con la carga $q$. En el centro del cuadrado está fija una carga puntiforme de signo contrario, de valor $Q$, ¿Cuál debe ser el valor de $Q$ para que la fuerza total sobre cada una de las cuatro partículas sea nula? Considere que la única fuerza actuante sobre el sistema es eléctrica.
 
 \end{frame}
